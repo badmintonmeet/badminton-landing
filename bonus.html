@@ -2,27 +2,26 @@
 <html lang="zh-Hans">
 <head>
   <meta charset="UTF-8" />
+  <title>HSBC BWF World Tour Finals 2025 | BadMeet 羽你相约</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nova88 新会员欢迎奖金 | Bonus Selamat Datang</title>
   <meta
     name="description"
-    content="Nova88 新会员五大欢迎奖金：150% Sportsbook、88% Live Casino、100% Slot、288% Slot、88% E-Sports。Daftar Nova88 & tuntut bonus anda sekarang."
+    content="HSBC BWF World Tour Finals 2025 杭州站 – 即时比分、赛程安排、重点赛况与羽球粉丝专属福利，一站看完。"
   />
-
-  <!-- 预连接 Nova88 加快跳转 -->
-  <link rel="preconnect" href="https://www.nova88105.net" />
-
   <style>
     :root {
-      --bg-start: #1d4ed8;
-      --bg-end: #312e81;
-      --card-bg: #ffffff;
-      --accent: #2563eb;
-      --accent-soft: rgba(37, 99, 235, 0.08);
-      --text-main: #111827;
-      --text-sub: #4b5563;
-      --radius-xl: 24px;
-      --shadow-xl: 0 24px 60px rgba(15, 23, 42, 0.5);
+      --bg-gradient-start: #1b2a6b;
+      --bg-gradient-end: #431f85;
+      --accent: #ff7b1a;
+      --accent-soft: #ffb36a;
+      --text-main: #ffffff;
+      --text-sub: #d7d7ff;
+      --card-bg: rgba(10, 15, 40, 0.9);
+      --card-border: rgba(255, 255, 255, 0.06);
+      --cta-bg: #ff7b1a;
+      --cta-bg-hover: #ff9c34;
+      --cta-text: #ffffff;
+      --badge-bg: rgba(255, 255, 255, 0.1);
     }
 
     * {
@@ -32,257 +31,592 @@
     }
 
     body {
-      min-height: 100vh;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Microsoft YaHei",
         sans-serif;
-      background: radial-gradient(circle at top, var(--bg-start), var(--bg-end));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 16px;
+      background: radial-gradient(circle at top, #29388f 0, #05071b 55%, #02000f 100%);
       color: var(--text-main);
+      line-height: 1.6;
+      padding: 16px;
     }
 
-    .card {
-      max-width: 560px;
-      width: 100%;
-      background: var(--card-bg);
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow-xl);
-      padding: 22px 20px 20px;
+    .page {
+      max-width: 900px;
+      margin: 0 auto 48px;
+    }
+
+    .hero {
+      background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.05),
+          rgba(255, 255, 255, 0)
+        ),
+        radial-gradient(circle at top left, #3c4df0 0, transparent 60%),
+        radial-gradient(circle at bottom right, #ff7b1a 0, transparent 55%);
+      border-radius: 24px;
+      padding: 20px 18px 22px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 22px 60px rgba(4, 4, 40, 0.65);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
     }
 
     .badge {
       display: inline-flex;
       align-items: center;
-      padding: 6px 12px;
+      gap: 6px;
+      padding: 4px 10px;
       border-radius: 999px;
-      background: rgba(37, 99, 235, 0.06);
-      font-size: 13px;
-      color: var(--accent);
-      border: 1px solid rgba(129, 140, 248, 0.6);
-      margin-bottom: 10px;
+      font-size: 11px;
+      background: var(--badge-bg);
+      color: var(--text-sub);
+      backdrop-filter: blur(6px);
     }
 
-    .badge span {
-      margin-left: 6px;
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #18ff9b;
+      box-shadow: 0 0 8px #18ff9b;
     }
 
-    h1 {
-      font-size: 21px;
-      line-height: 1.35;
+    .hero-title {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
       margin-bottom: 4px;
     }
 
-    .subtitle {
-      font-size: 13px;
-      color: var(--text-sub);
-      line-height: 1.5;
+    .hero-subtitle {
+      font-size: 15px;
+      color: var(--accent-soft);
       margin-bottom: 12px;
     }
 
-    .subtitle span {
-      display: block;
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      font-size: 13px;
+      color: var(--text-sub);
+      margin-bottom: 12px;
     }
 
-    /* 新会员五大福利图 */
-    .bonus-img {
-      width: 100%;
-      max-width: 420px;
-      display: block;
-      margin: 8px auto 4px;
-      border-radius: 18px;
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
+    .hero-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
 
-    .small-hint {
-      font-size: 11px;
-      color: #6b7280;
-      text-align: center;
-      margin-bottom: 14px;
+    .hero-meta-icon {
+      font-size: 15px;
     }
 
-    .highlight-box {
-      background: var(--accent-soft);
-      border-radius: 18px;
+    .countdown-wrapper {
+      margin: 10px 0 14px;
       padding: 10px 12px;
-      margin-bottom: 14px;
-      font-size: 13px;
-      border: 1px solid rgba(37, 99, 235, 0.16);
+      border-radius: 14px;
+      background: rgba(1, 8, 35, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
     }
 
-    .highlight-title {
-      font-weight: 600;
-      margin-bottom: 4px;
+    .countdown-label {
+      font-size: 13px;
+      color: var(--accent-soft);
+    }
+
+    .countdown {
+      display: flex;
+      gap: 8px;
       font-size: 13px;
     }
 
-    ul {
-      list-style: none;
-      margin-bottom: 14px;
-      font-size: 13px;
+    .countdown-item {
+      text-align: center;
+      min-width: 52px;
+      padding: 4px 6px;
+      border-radius: 10px;
+      background: rgba(23, 32, 92, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .countdown-number {
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .countdown-label-small {
+      font-size: 10px;
       color: var(--text-sub);
     }
 
-    ul li {
-      margin-bottom: 4px;
-      padding-left: 16px;
-      position: relative;
+    .hero-copy {
+      font-size: 13px;
+      color: var(--text-sub);
+      margin-bottom: 16px;
     }
 
-    ul li::before {
-      content: "•";
-      position: absolute;
-      left: 4px;
-      color: var(--accent);
-    }
-
-    .btn-wrap {
-      margin-bottom: 10px;
-    }
-
-    .btn-main {
-      width: 100%;
-      border: none;
-      border-radius: 999px;
-      padding: 13px 18px;
-      font-size: 15px;
-      font-weight: 700;
+    .hero-copy strong {
       color: #ffffff;
-      background: linear-gradient(135deg, #f97316, #ea580c);
-      cursor: pointer;
+    }
+
+    .cta-row {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+
+    .cta-btn {
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      box-shadow: 0 16px 36px rgba(234, 88, 12, 0.55);
-      transition: transform 0.08s ease, box-shadow 0.08s ease,
-        filter 0.06s ease;
-      text-decoration: none;
-    }
-
-    .btn-main span {
-      display: block;
-      line-height: 1.3;
-    }
-
-    .btn-main .line-1 {
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(135deg, var(--cta-bg) 0, #ffb642 100%);
+      color: var(--cta-text);
       font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 12px 30px rgba(255, 123, 26, 0.55);
+      transition: transform 0.12s ease-out, box-shadow 0.12s ease-out,
+        filter 0.12s;
+      white-space: nowrap;
     }
 
-    .btn-main .line-2 {
-      font-size: 13px;
-      opacity: 0.95;
-    }
-
-    .btn-main:hover {
+    .cta-btn:hover {
       transform: translateY(-1px);
-      box-shadow: 0 20px 40px rgba(234, 88, 12, 0.7);
       filter: brightness(1.03);
+      box-shadow: 0 16px 40px rgba(255, 143, 46, 0.7);
     }
 
-    .btn-main:active {
-      transform: translateY(1px);
-      box-shadow: 0 10px 22px rgba(234, 88, 12, 0.6);
-      filter: brightness(0.96);
+    .cta-btn span {
+      font-size: 16px;
+      margin-left: 4px;
     }
 
-    .note {
+    .cta-subtext {
       font-size: 11px;
-      color: #6b7280;
-      line-height: 1.5;
-      margin-top: 2px;
+      color: var(--text-sub);
     }
 
-    .footer-text {
-      margin-top: 6px;
+    .section {
+      margin-top: 24px;
+    }
+
+    .section-title-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .section-tag {
+      font-size: 11px;
+      color: var(--accent-soft);
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      border: 1px solid var(--card-border);
+      padding: 14px 14px 12px;
+      margin-bottom: 12px;
+    }
+
+    .hot-matches-list {
+      list-style: none;
+      margin-top: 4px;
+    }
+
+    .hot-matches-list li {
+      padding: 8px 6px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .hot-matches-list li:last-child {
+      border-bottom: none;
+    }
+
+    .match-label {
+      color: var(--accent-soft);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .match-players {
+      font-weight: 600;
+    }
+
+    .match-time {
+      font-size: 11px;
+      color: var(--text-sub);
+      text-align: right;
+      min-width: 70px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
       font-size: 10px;
-      color: #9ca3af;
-      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: var(--accent-soft);
+      margin-left: 6px;
     }
 
-    @media (max-width: 480px) {
-      .card {
-        padding: 18px 14px 16px;
-        border-radius: 20px;
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 4px;
+      font-size: 12px;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+      padding: 6px 6px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      text-align: left;
+    }
+
+    .schedule-table th {
+      font-size: 11px;
+      color: var(--accent-soft);
+      font-weight: 500;
+    }
+
+    .schedule-table td.flag {
+      font-size: 16px;
+    }
+
+    .bullet-list {
+      list-style: none;
+      margin-top: 4px;
+    }
+
+    .bullet-list li {
+      font-size: 13px;
+      color: var(--text-sub);
+      padding: 4px 0;
+    }
+
+    .bullet-list li::before {
+      content: "•";
+      color: var(--accent-soft);
+      margin-right: 6px;
+    }
+
+    .secondary-cta {
+      text-align: center;
+      margin: 18px auto 0;
+    }
+
+    .secondary-cta .cta-btn {
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .disclaimer {
+      font-size: 10px;
+      color: rgba(188, 197, 255, 0.75);
+      margin-top: 16px;
+      line-height: 1.5;
+    }
+
+    .logo-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--text-sub);
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .logo-row span {
+      opacity: 0.9;
+    }
+
+    @media (min-width: 720px) {
+      .hero {
+        padding: 22px 24px 26px;
       }
-      h1 {
-        font-size: 19px;
+      .hero-title {
+        font-size: 30px;
+      }
+      .hero-subtitle {
+        font-size: 16px;
+      }
+      .hero-copy {
+        font-size: 14px;
+      }
+      .countdown-wrapper {
+        padding: 12px 14px;
       }
     }
   </style>
 </head>
-
 <body>
-  <main class="card">
-    <div class="badge">
-      🎁 <span>Nova88 New Member Bonus</span>
-    </div>
+  <div class="page">
+    <!-- HERO 区 -->
+    <section class="hero">
+      <div class="hero-badge-row">
+        <div class="badge">
+          <span class="badge-dot"></span> WORLD TOUR FINALS • HANGZHOU 2025
+        </div>
+        <div class="badge">直播比分比 FB 更快</div>
+      </div>
 
-    <h1>
-      新会员五大欢迎奖金<br />
-      <span style="font-size: 90%; color: #2563eb">
-        Bonus Selamat Datang Untuk Pemain Malaysia
-      </span>
-    </h1>
+      <h1 class="hero-title">HSBC BWF World Tour Finals 2025</h1>
+      <p class="hero-subtitle">Hangzhou · 17–21 December 2025</p>
 
-    <p class="subtitle">
-      <span>注册 Nova88 新账户即可领取多重欢迎奖金：</span>
-      <span>Sport、Casino、Slot、E-Sports 通通有。</span>
-    </p>
+      <div class="hero-meta">
+        <span>
+          <span class="hero-meta-icon">📍</span> 杭州 – 年度总决赛
+        </span>
+        <span>
+          <span class="hero-meta-icon">🏸</span> 李梓嘉 · 陈堂杰 / 杜依蔚 · 陈康乐 / 蒂娜
+        </span>
+        <span>
+          <span class="hero-meta-icon">⏱</span> 实时比分 & 赛况重点
+        </span>
+      </div>
 
-    <!-- 福利合集图片 -->
-    <img
-      src="nova88-bonus.png"
-      alt="Nova88 新会员五大欢迎奖金"
-      class="bonus-img"
-    />
+      <!-- 倒数计时 -->
+      <div class="countdown-wrapper">
+        <div class="countdown-label">▶ 下一场 World Tour Finals 赛事倒数：</div>
+        <div class="countdown" id="countdown">
+          <div class="countdown-item">
+            <div class="countdown-number" id="cd-days">--</div>
+            <div class="countdown-label-small">天</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="cd-hours">--</div>
+            <div class="countdown-label-small">小时</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="cd-minutes">--</div>
+            <div class="countdown-label-small">分钟</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="cd-seconds">--</div>
+            <div class="countdown-label-small">秒</div>
+          </div>
+        </div>
+      </div>
 
-    <p class="small-hint">
-      图示福利包括：150% Sportsbook、88% Live Casino、100% Slot、288% Slot、
-      88% E-Sports Welcome Bonus（以官网活动为准）。
-    </p>
+      <p class="hero-copy">
+        决赛周马上开打，<strong>所有你想看的比分、赛程、关键分与精华</strong>，
+        我们已经帮你整理在一个页面：<strong>不用再到处找直播，打开就看</strong>。
+      </p>
 
-    <section class="highlight-box" aria-label="Bonus info">
-      <div class="highlight-title">🔥 适合谁？Siapa yang sesuai?</div>
-      <div style="font-size: 13px">
-        ✔ 喜欢体育、Live Casino、Slot、E-Sports 的玩家<br />
-        ✔ 想用小本金拿更多 Bonus 的玩家<br />
-        ✔ 玩家来自 Malaysia，支持 MYR 充值
+      <div class="cta-row">
+        <!-- 把 href 换成你自己的 Nova88 promotion 链接即可 -->
+        <a
+          class="cta-btn"
+          href="https://aff.nova88mas102.com/en/promotion?affCode=63998&clickId=1220026"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          立即进入赛事专区 <span>➜</span>
+        </a>
+        <div class="cta-subtext">
+          比分更新更快 · 今日热点对决 · 羽球粉丝专属通道
+        </div>
+      </div>
+
+      <div class="logo-row">
+        <span>Powered by <strong>BadMeet 羽你相约</strong></span>
+        <span>Official Partner: Nova88 (18+ 适度娱乐)</span>
       </div>
     </section>
 
-    <ul>
-      <li>150% Sportsbook Welcome Bonus – 适合喜欢体育投注的你</li>
-      <li>88% Live Casino Bonus – 主打真人百家乐 / 轮盘</li>
-      <li>100% Fabulous Slot Bonus – 适合慢慢转动的玩家</li>
-      <li>288% Slots Welcome Bonus – 高倍 Bonus，适合冲击大奖</li>
-      <li>88% E-Sports Welcome Bonus – Dota2、LOL、CS 电子竞技</li>
-    </ul>
+    <!-- 今日热点对决 -->
+    <section class="section">
+      <div class="section-title-row">
+        <h2 class="section-title">今日赛事热点</h2>
+        <span class="section-tag">实时赛程以系统为准 · 仅示例文案可自行更改</span>
+      </div>
+      <div class="card">
+        <ul class="hot-matches-list">
+          <li>
+            <div>
+              <div class="match-label">MS – 男单焦点战</div>
+              <div class="match-players">
+                李梓嘉 🇲🇾 vs Viktor Axelsen 🇩🇰
+                <span class="pill">关键战 · Top 4 之争</span>
+              </div>
+            </div>
+            <div class="match-time">今晚黄金时段</div>
+          </li>
+          <li>
+            <div>
+              <div class="match-label">XD – 混双大战</div>
+              <div class="match-players">
+                陈堂杰 / 杜依蔚 🇲🇾 vs 强敌组合
+                <span class="pill">抢分保出线</span>
+              </div>
+            </div>
+            <div class="match-time">实时比分 · 关键分提醒</div>
+          </li>
+          <li>
+            <div>
+              <div class="match-label">WD – 女双热门</div>
+              <div class="match-players">
+                陈康乐 / 蒂娜 🇲🇾 vs 世界强档
+                <span class="pill">爆冷机会</span>
+              </div>
+            </div>
+            <div class="match-time">赛后精华立即看</div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="btn-wrap">
-      <!-- ✅ 这里是你的 Nova88 Affiliate 链接，换链接只要改 href 即可 -->
+    <!-- 大马选手赛程（示例） -->
+    <section class="section">
+      <div class="section-title-row">
+        <h2 class="section-title">马来西亚选手赛程一览</h2>
+        <span class="section-tag">方便你一眼看到今天谁上场</span>
+      </div>
+      <div class="card">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>时间 (本地)</th>
+              <th>项目</th>
+              <th>选手</th>
+              <th>对手</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>17 Dec · 下午</td>
+              <td>男单</td>
+              <td>李梓嘉 🇲🇾</td>
+              <td>待官方签表</td>
+            </tr>
+            <tr>
+              <td>18 Dec · 晚上</td>
+              <td>混双</td>
+              <td>陈堂杰 / 杜依蔚 🇲🇾</td>
+              <td>待官方签表</td>
+            </tr>
+            <tr>
+              <td>19 Dec · 下午</td>
+              <td>女双</td>
+              <td>陈康乐 / 蒂娜 🇲🇾</td>
+              <td>待官方签表</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 羽球粉丝福利说明 -->
+    <section class="section">
+      <div class="section-title-row">
+        <h2 class="section-title">羽球粉丝专属 · 为什么要现在进来？</h2>
+      </div>
+      <div class="card">
+        <ul class="bullet-list">
+          <li><strong>比分更新比 FB / IG 直播快</strong>，关键分不会再错过</li>
+          <li>每天整理 <strong>当日重点对决 + 精华</strong>，不用自己找</li>
+          <li>赛事期间开放 <strong>羽球粉丝专属优惠通道</strong>（数量有限）</li>
+          <li>一站式：比分 · 赛程 · 精彩片段 · 特别奖励</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 底部 CTA -->
+    <section class="section secondary-cta">
+      <p style="font-size: 13px; color: var(--accent-soft); margin-bottom: 8px;">
+        已经准备好追比分 + 看精华 + 解锁粉丝福利？
+      </p>
       <a
-        class="btn-main"
-        href="https://www.nova88105.net/en/promotion?affCode=63998&clickId=1220026"
+        class="cta-btn"
+        href="https://aff.nova88mas102.com/en/promotion?affCode=63998&clickId=1220026"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span class="line-1">立即注册 & 领取欢迎奖金</span>
-        <span class="line-2">Daftar Sekarang & Tuntut Bonus Anda →</span>
+        立即进入赛事专区 · 免费查看 <span>⚡</span>
       </a>
-    </div>
+      <p class="disclaimer">
+        提示：本页面以羽毛球赛事资讯与比分为主，由 BadMeet 羽你相约
+        整理，Nova88 作为合作伙伴提供技术与优惠支持。参与任何线上娱乐活动
+        请确保合法合规，18+ 请量力而为，适度娱乐。
+      </p>
+    </section>
+  </div>
 
-    <p class="note">
-      点击上方按钮后，系统会打开 Nova88 官方网站的活动页面。<br />
-      Selepas klik, anda akan dibawa ke laman rasmi Nova88 untuk daftar &
-      tuntut bonus. Sila baca terma & syarat di laman rasmi sebelum参与。
-    </p>
+  <!-- 倒计时脚本：你可以把日期改成你要的第一场开赛时间 -->
+  <script>
+    (function () {
+      // 目标时间：2025-12-17 09:00 (GMT+8)
+      // 你可以根据实际首场比赛时间自己改
+      var targetDate = new Date("2025-12-17T09:00:00+08:00").getTime();
 
-    <p class="footer-text">
-      Untuk tujuan hiburan & rujukan sahaja · Sila bermain secara bertanggungjawab.
-    </p>
-  </main>
+      function updateCountdown() {
+        var now = new Date().getTime();
+        var diff = targetDate - now;
+
+        if (diff <= 0) {
+          document.getElementById("countdown").innerHTML =
+            "<span style='font-size:13px;color:#ffb36a;'>赛事已经开打 · 实时比分已更新</span>";
+          return;
+        }
+
+        var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        var minutes = Math.floor((diff / (1000 * 60)) % 60);
+        var seconds = Math.floor((diff / 1000) % 60);
+
+        document.getElementById("cd-days").textContent = String(days);
+        document.getElementById("cd-hours").textContent = String(hours).padStart(
+          2,
+          "0"
+        );
+        document
+          .getElementById("cd-minutes")
+          .textContent = String(minutes).padStart(2, "0");
+        document
+          .getElementById("cd-seconds")
+          .textContent = String(seconds).padStart(2, "0");
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    })();
+  </script>
 </body>
 </html>
