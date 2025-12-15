@@ -87,10 +87,6 @@
       margin-bottom: 14px;
     }
 
-    .timer strong {
-      color: #facc15;
-    }
-
     ul {
       list-style: none;
       padding: 0;
@@ -106,12 +102,6 @@
       margin-bottom: 8px;
     }
 
-    li .bullet {
-      font-size: 12px;
-      margin-top: 3px;
-      color: #e5e7eb;
-    }
-
     .cta-btn {
       width: 100%;
       border: none;
@@ -123,13 +113,7 @@
       background: linear-gradient(135deg, #facc15, #fb923c);
       color: #111827;
       box-shadow: 0 12px 28px rgba(250, 204, 21, 0.4);
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
       margin-bottom: 10px;
-    }
-
-    .cta-btn:active {
-      transform: scale(0.97);
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
     }
 
     .note {
@@ -137,13 +121,30 @@
       color: #9ca3af;
       line-height: 1.5;
     }
+
+    .loading {
+      font-size: 12px;
+      color: #e5e7eb;
+      margin: 4px 0 14px;
+      opacity: 0.95;
+    }
   </style>
 
   <script>
     function goToAffiliate() {
-      // ⚠️ 这里换成你的 Nova88 Affiliate 链接
+      var tip = document.getElementById("loadingTip");
+      if (tip) tip.style.display = "block";
+
+      var btns = document.querySelectorAll(".cta-btn");
+      btns.forEach(function(btn){
+        btn.disabled = true;
+        btn.style.opacity = "0.8";
+      });
+
       var url = "https://www.nova88105.net/en/promotion?affCode=63998&clickId=1220026";
-      window.location.href = url;
+      setTimeout(function () {
+        window.location.href = url;
+      }, 1000);
     }
   </script>
 </head>
@@ -159,41 +160,26 @@
 
     <h1>
       <span class="highlight">羽毛球即时比分</span><br />
-      大马球员赛程 & 完整赛果。
+      大马球员赛程 & 完整赛果
     </h1>
 
-    <p class="desc">
-      我们正在为你打开官方数据页面。<br />
-      请点击下面按钮，一键进入完整比分与赛果页面。
-    </p>
-
-    <div class="timer">
-      ▶ 系统已就绪，<strong>点一下马上继续</strong>
-    </div>
-
-    <ul>
-      <li>
-        <span class="bullet">•</span>
-        <span>实时比分、每一局赛果、完场结果一目了然。</span>
-      </li>
-      <li>
-        <span class="bullet">•</span>
-        <span>重点整理所有马来西亚选手的赛程与成绩。</span>
-      </li>
-      <li>
-        <span class="bullet">•</span>
-        <span>本页不需要注册，只负责帮你跳转到数据源。</span>
-      </li>
-    </ul>
+    <p class="desc">点击下方按钮，立即进入完整比分与赛果页面。</p>
 
     <button class="cta-btn" onclick="goToAffiliate()">
-      👉 继续查看完整比分
+      👉 立即进入即时比分
     </button>
 
-    <div class="note">
-      点击「继续查看完整比分」后，你将前往合作方的官方数据网站，
-      在那里查看所有羽毛球赛事的比分、赛程与详细资讯。
+    <div id="loadingTip" class="loading" style="display:none;">
+      正在连接…请稍候 1 秒
     </div>
+
+    <div class="note">
+      本页不需注册，仅协助你跳转至官方数据来源。
+    </div>
+
+    <button class="cta-btn" onclick="goToAffiliate()">
+      👉 立即进入即时比分
+    </button>
   </div>
 </body>
 </html>
